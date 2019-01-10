@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 5</title>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+<script type="application/javascript">
+    var set = setInterval(function () {
+        let container = document.getElementById('container');
+        let min = 0;
+        let max = 21;
+        let random = Math.floor(Math.random() * (max - min)) + min;
+            container.innerHTML += '<div class="element">Element ' + random + '</div>'
+    }, 5000);
+</script>
+</html>
