@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+</head>
+<body>
+    <div id="container"></div>
+    <input id="add-item-btn" type="button" value="+">
+</body>
+<script type="application/javascript">
+    let button = document.getElementById("add-item-btn");
+    button.onclick = function(){
+        let container = document.getElementById('container');
+        container.innerHTML += '<div class="element">Element</div>'
+    }
+</script>
+</html>
